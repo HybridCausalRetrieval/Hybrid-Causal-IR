@@ -9,7 +9,8 @@ This project implements an advanced retrieval system designed to answer complex 
 
 ## 🌟 Project Overview
 
-The system aims to improve search result relevance—especially for finding **causal evidence**—by integrating three distinct scoring mechanisms:
+The system aims to improve search result relevance, especially for finding **causal evidence**, by integrating two scoring mechanisms: semantic and causal scores.
+
 
 1.  **Semantic Retrieval (BioBERT):** Uses vector embeddings for high-quality semantic similarity matching on document abstracts.
 2.  **Causal Reasoning (Neo4j Graph):** Queries a **Neo4j graph database** containing causal relationships extracted from biomedical literature, providing a structured assessment of causal links.
@@ -28,7 +29,7 @@ The system aims to improve search result relevance—especially for finding **ca
     * `./data/cleaned/cleaned_abstracts.csv`
     * `./data/embeddings/semantic_index.faiss`
     * `./data/embeddings/id_mapping.npy`
-* An **OpenAI API Key** is required if you use the `hybrid_retriever_with_summary.py` module for LLM-generated summaries.
+* An **OpenAI API Key** is required if you use the `summary_generate.py` module for LLM-generated summaries.
 
 ## ⚙️ Setup
 
